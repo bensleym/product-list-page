@@ -1,0 +1,58 @@
+.main-content-header {
+  display: flex;
+  justify-content: space-between;
+
+  &__amount {
+    font-size: @font-size-lg;
+    color: @primary;
+    padding: 20px 0;
+    font-weight: 400;
+  }
+
+  &__select {
+    width: 150px;
+    max-width: 150px;
+    height: 40px;
+    border: 2px solid @gray-200;
+    border-radius: 0;
+    font-size: 16px;
+    margin: 20px 0 20px 20px;
+    display: block;
+    background: url("../../img/select-arrows.png") 95% 6px no-repeat @white;
+    line-height: 1;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding-left: 10px;
+    font-family: @font-family-sub;
+    font-size: @font-size-sm;
+  }
+
+  &__options {
+    display: flex;
+  }
+
+  &__list-view {
+    &.fas {
+      display: none;
+
+      @media screen and (min-width: @sm) {
+        display: block;
+      }
+    }
+
+    width: 16px;
+    height: 16px;
+    margin-top: 20px;
+    font-size: @font-size-md;
+    color: @primary;
+    border: 2px solid @gray-200;
+    padding: 10px;
+    cursor: pointer;
+
+    &.active {
+      background: @secondary;
+      color: @white;
+    }
+  }
+}

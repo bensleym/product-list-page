@@ -1,0 +1,22 @@
+.main-content {
+  width: 100%;
+  min-height: 500px;
+
+  &__content {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+
+    @media screen and (min-width: @xlg) {
+      width: @xlg;
+      padding: 0;
+    }
+  }
+
+  &__product-lister {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
